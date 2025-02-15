@@ -1,0 +1,171 @@
+/* Základní styly */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigace */
+header {
+    background: #020c24;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .nav-items {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-items li {
+    margin: 0 15px;
+}
+
+header .nav-items li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header .nav-items li a:hover,
+header .nav-items li a.active {
+    color: #7eaee6;
+}
+
+/* Obsah stránky */
+main {
+    padding: 20px 0;
+}
+
+.intro h1 {
+    font-size: 32px;
+    color: #264380;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info h2 {
+    font-size: 24px;
+    color: #264380;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.info ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.info ul li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.info p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Flexbox pro layout sekcí pro lepší rozložení */
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.info .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.img img {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 100%; 
+    max-width: 300px; 
+    margin: 10px 0;
+}
+
+
+.img1 img {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 150%; 
+    max-width: 230px; 
+    margin: 10px 15px 10px 0; 
+    float: left;
+}
+
+
+.image1 {
+    max-width: 500px;
+}
+
+.image2 {
+    max-width: 500px; 
+}
+
+.image3 {
+    max-width: 500px; 
+}
+
+.image4 {
+    max-width: 500px;
+}
+
+.intro, .info .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*spodní patka*/
+footer {
+    background: #020c24;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 30px;
+}
